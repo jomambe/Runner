@@ -252,6 +252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runningSpeed: 10
+  xSpeed: 250
+  limitx: 3.75
 --- !u!4 &827978356
 Transform:
   m_ObjectHideFlags: 0
@@ -504,8 +506,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.26630273, y: -0.13404632, z: 0.037426405, w: 0.9537892}
-  m_LocalPosition: {x: 2.9, y: 3.7, z: -16.39}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 1}
+  m_LocalPosition: {x: 1.4, y: 3.7, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -523,10 +525,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909b19b69eb66ab4482e858ea93de6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTarget: {fileID: 749829063}
-  sSpeed: 10
-  dist: {x: 0, y: 3.7, z: -6}
-  lookTarget: {fileID: 1826676278}
+  cameraTarget: {fileID: 827978356}
+  sSpeed: 2
+  dist: {x: 1.4, y: 3.7, z: -6}
+  lookTarget: {fileID: 827978356}
 --- !u!1 &1826676277
 GameObject:
   m_ObjectHideFlags: 0
