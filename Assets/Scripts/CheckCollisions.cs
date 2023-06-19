@@ -17,6 +17,15 @@ public class CheckCollisions : MonoBehaviour
             other.gameObject.SetActive(false);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Collision"))
+        {
+            Debug.Log("You're dead");
+        }
+    }
+
     public void AddCoin()
     {
         score++;
