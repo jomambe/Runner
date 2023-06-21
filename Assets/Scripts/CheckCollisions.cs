@@ -7,6 +7,7 @@ public class CheckCollisions : MonoBehaviour
 {
     public int score;
     public TextMeshProUGUI CoinText;
+    public PlayerController playerController;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coin"))
@@ -15,6 +16,11 @@ public class CheckCollisions : MonoBehaviour
             AddCoin();
             //Destroy(other.gameObject);
             other.gameObject.SetActive(false);
+        }
+        else if (other.CompareTag("End"))
+        {
+            Debug.Log("Congratulations!!");
+            playerController.runningSpeed = 0;
         }
     }
 
